@@ -1,1 +1,303 @@
-Hello World!
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Basil Begonia</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <style type="text/css">
+        html {
+            font-size: 12pt;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+            min-height: 100vh;
+            display: flex;
+        }
+
+        body {
+            flex: 1;
+
+            padding: 1rem;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background-color: #fffbfa;
+
+            color: #796662;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 100;
+            font-size: 2.5rem;
+            margin: 0 0 1rem;
+        }
+
+        header {
+            margin-bottom: 4rem;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        section:last-of-type {
+            margin-bottom: initial;
+        }
+
+        section>h1 {
+            margin-bottom: 0.75rem;
+            font-size: 2rem;
+        }
+
+        section>h1.small {
+            font-size: 1rem;
+        }
+
+        section.head>h1 {
+            font-size: 2.5rem;
+        }
+
+        section.head {
+            margin-bottom: 4rem;
+        }
+
+        a {
+            color: #796662;
+        }
+
+        .icon {
+            padding: 0.5rem;
+            margin-right: 1rem;
+
+            border: 1px solid #fffbfa;
+            border-radius: 5pt;
+
+            display: flex;
+
+            transition-property: border-color;
+            transition-duration: 400ms;
+            transition-timing-function: ease-in-out;
+        }
+
+        .icon:last-child {
+            margin-right: initial;
+        }
+
+        .icon>svg {
+            height: 2rem;
+            fill: #796662;
+
+            transition-property: fill;
+            transition-duration: 300ms;
+            transition-timing-function: ease-in-out;
+        }
+
+        .icon.small {
+            margin-right: 0.5rem;
+        }
+
+        .icon.small:last-child {
+            margin-right: initial;
+        }
+
+        .icon.small>svg {
+            height: 1rem;
+        }
+
+        section>.icons {
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+        }
+
+        .gmail:hover {
+            border-color: #D14836;
+        }
+
+        .gmail:hover>svg {
+            fill: #D14836;
+        }
+
+        .linkedin:hover {
+            border-color: #0077B5;
+        }
+
+        .linkedin:hover>svg {
+            fill: #0077B5;
+        }
+
+        .twitter:hover {
+            border-color: #1DA1F2;
+        }
+
+        .twitter:hover>svg {
+            fill: #1DA1F2;
+        }
+
+        .stackoverflow:hover {
+            border-color: #FE7A16;
+        }
+
+        .stackoverflow:hover>svg {
+            fill: #FE7A16;
+        }
+
+        .github:hover {
+            border-color: #181717;
+        }
+
+        .github:hover>svg {
+            fill: #181717;
+        }
+
+        .flickr:hover {
+            border-color: #0063DC;
+        }
+
+        .flickr:hover>svg {
+            fill: #0063DC;
+        }
+
+        .px500:hover {
+            border-color: #0099E5;
+        }
+
+        .px500:hover>svg {
+            fill: #0099E5;
+        }
+
+        .instagram:hover {
+            border-color: #E4405F;
+        }
+
+        .instagram:hover>svg {
+            fill: #E4405F;
+        }
+
+        @media only screen and (max-device-width: 768px) {
+            .gmail {
+                border-color: #D14836;
+            }
+
+            .gmail>svg {
+                fill: #D14836;
+            }
+
+            .linkedin {
+                border-color: #0077B5;
+            }
+
+            .linkedin>svg {
+                fill: #0077B5;
+            }
+
+            .twitter {
+                border-color: #1DA1F2;
+            }
+
+            .twitter>svg {
+                fill: #1DA1F2;
+            }
+
+            .stackoverflow {
+                border-color: #FE7A16;
+            }
+
+            .stackoverflow>svg {
+                fill: #FE7A16;
+            }
+
+            .github {
+                border-color: #181717;
+            }
+
+            .github>svg {
+                fill: #181717;
+            }
+
+            .flickr {
+                border-color: #0063DC;
+            }
+
+            .flickr>svg {
+                fill: #0063DC;
+            }
+
+            .px500 {
+                border-color: #0099E5;
+            }
+
+            .px500>svg {
+                fill: #0099E5;
+            }
+
+            .instagram {
+                border-color: #E4405F;
+            }
+
+            .instagram>svg {
+                fill: #E4405F;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="head">
+        <h1 class="large">Basil Begonia</h1>
+        <span>Software developer based in Manila, Philippines</span>
+        <span>Currently works at
+            <a href="https://medgrocer.com">MedGrocer</a>
+        </span>
+    </section>
+
+    <section>
+        <h1>Contact</h1>
+
+        <div class="icons">
+            <a id="gmail" href="mailto:basil.begonia@gmail.com" class="icon gmail">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 3v10c0 .567-.433 1-1 1h-1V4.925L8 9.233 2 4.925V14H1c-.567 0-1-.433-1-1V3c0-.283.108-.533.287-.712A.995.995 0 0 1 1 2h.333L8 6.833 14.667 2H15c.283 0 .533.108.713.288A.996.996 0 0 1 16 3z"
+                        fill-rule="evenodd" />
+                </svg>
+            </a>
+
+            <a id="linkedin" href="https://www.linkedin.com/in/basilbegonia" class="icon linkedin">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round"
+                    stroke-miterlimit="1.414">
+                    <path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51v1.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955a1.376 1.376 0 1 1-.001-2.751 1.376 1.376 0 0 1 .001 2.751zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z"
+                        fill-rule="nonzero" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <h1>Software</h1>
+
+        <div class="icons">
+            <a id="github" href="https://github.com/basilbegonia" class="icon github">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round"
+                    stroke-miterlimit="1.414">
+                    <title>GitHub icon</title>
+                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                    />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+</body>
+
+</html>
